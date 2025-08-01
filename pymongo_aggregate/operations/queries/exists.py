@@ -1,6 +1,6 @@
 from typing import Literal
 
-from app.operations.queries.query_operation import QueryOperation
+from pymongo_aggregate.operations.queries.query_operation import QueryOperation
 
 type ExistsContentType = Literal[1]
 

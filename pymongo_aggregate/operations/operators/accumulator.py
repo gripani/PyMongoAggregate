@@ -2,8 +2,8 @@
 
 from bson import Code
 
-from app.operations.operators.op_operation import OpOperation
-from app.utils.code_validator import CodeValidator
+from pymongo_aggregate.operations.operators.op_operation import OpOperation
+from pymongo_aggregate.utils.code_validator import CodeValidator
 
 type AccumulatorContentType = dict[str, str | list[str]]
 

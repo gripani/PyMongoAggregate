@@ -2,8 +2,8 @@
 
 from typing import Mapping, Any
 
-from app.operations.base_operation import BaseOperation
-from app.operations.queries.query_operation import QueryOperation
+from pymongo_aggregate.operations.base_operation import BaseOperation
+from pymongo_aggregate.operations.queries.query_operation import QueryOperation
 
 
 class Or(QueryOperation[list[BaseOperation | Mapping[str, Any]]]):

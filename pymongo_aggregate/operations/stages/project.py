@@ -1,7 +1,7 @@
 from typing import Literal, Any
 
-from app.operations.operators.op_operation import OpOperation
-from app.operations.stages.stage_operation import StageOperation
+from pymongo_aggregate.operations.operators.op_operation import OpOperation
+from pymongo_aggregate.operations.stages.stage_operation import StageOperation
 
 
 type ProjectContentType = dict[str, str | Literal[1, 0] | OpOperation[Any]]

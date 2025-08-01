@@ -1,6 +1,6 @@
 from re import Pattern
 
-from app.operations.operators.op_operation import OpOperation
+from pymongo_aggregate.operations.operators.op_operation import OpOperation
 
 
 class RegexFind(OpOperation[dict[str, str | Pattern]]):

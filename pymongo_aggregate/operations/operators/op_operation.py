@@ -2,7 +2,7 @@
 
 from abc import ABC
 
-from app.operations.base_operation import BaseOperation
+from pymongo_aggregate.operations.base_operation import BaseOperation
 
 
 class OpOperation[T](BaseOperation[T], ABC):

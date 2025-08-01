@@ -1,6 +1,6 @@
 """split operator module"""
 
-from app.operations.operators.op_operation import OpOperation
+from pymongo_aggregate.operations.operators.op_operation import OpOperation
 
 type SplitContentType = list[str]
 

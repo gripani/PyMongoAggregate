@@ -1,6 +1,6 @@
 """avg operator module"""
-from app.const import COMMON_STAGES
-from app.operations.operators.op_operation import OpOperation
+from pymongo_aggregate.const import COMMON_STAGES
+from pymongo_aggregate.operations.operators.op_operation import OpOperation
 
 type AvgContentType = str | OpOperation
 

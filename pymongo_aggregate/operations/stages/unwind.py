@@ -1,4 +1,4 @@
-from app.operations.stages.stage_operation import StageOperation
+from pymongo_aggregate.operations.stages.stage_operation import StageOperation
 
 
 type UnwindContentType = dict[str, str | bool]

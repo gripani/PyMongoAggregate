@@ -1,7 +1,7 @@
 from typing import Mapping
 
-from app.operations.base_operation import BaseOperation
-from app.operations.stages.stage_operation import StageOperation
+from pymongo_aggregate.operations.base_operation import BaseOperation
+from pymongo_aggregate.operations.stages.stage_operation import StageOperation
 
 class Group(StageOperation[dict[str, Mapping | None]]):
 
