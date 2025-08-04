@@ -1,13 +1,13 @@
 from re import compile as re_compile
 
-from app.operations.operators.multiply import Multiply
-from app.operations.operators.regex_find import RegexFind
-from app.operations.operators.sum import Sum
-from app.operations.stages.count import Count
-from app.operations.stages.group import Group
-from app.operations.stages.match import Match
-from app.operations.stages.project import Project
-from app.operations.stages.unwind import Unwind
+from pymongo_aggregate.operations.operators.multiply import Multiply
+from pymongo_aggregate.operations.operators.regex_find import RegexFind
+from pymongo_aggregate.operations.operators.sum import Sum
+from pymongo_aggregate.operations.stages.count import Count
+from pymongo_aggregate.operations.stages.group import Group
+from pymongo_aggregate.operations.stages.match import Match
+from pymongo_aggregate.operations.stages.project import Project
+from pymongo_aggregate.operations.stages.unwind import Unwind
 
 
 def test_count():

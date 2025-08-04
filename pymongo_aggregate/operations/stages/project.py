@@ -4,10 +4,7 @@ from pymongo_aggregate.operations.operators.op_operation import OpOperation
 from pymongo_aggregate.operations.stages.stage_operation import StageOperation
 
 
-type ProjectContentType = dict[str, str | Literal[1, 0] | OpOperation[Any]]
-
-
-class Project(StageOperation[ProjectContentType]):
+class Project(StageOperation[dict[str, str | Literal[1, 0] | OpOperation[Any]]]):
 
     """$project (aggregation)
 

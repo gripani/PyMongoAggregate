@@ -1,8 +1,8 @@
-from app.operations.queries.equals import Equals
-from app.operations.queries.exists import Exists
-from app.operations.queries.gt import Gt
-from app.operations.queries.lt import Lt
-from app.operations.queries.or_op import Or
+from pymongo_aggregate.operations.queries.equals import Equals
+from pymongo_aggregate.operations.queries.exists import Exists
+from pymongo_aggregate.operations.queries.gt import Gt
+from pymongo_aggregate.operations.queries.lt import Lt
+from pymongo_aggregate.operations.queries.or_op import Or
 
 
 def test_equals(a: int):

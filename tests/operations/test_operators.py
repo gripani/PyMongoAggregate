@@ -1,9 +1,10 @@
-from app.operations.operators.accumulator import Accumulator
-from app.operations.operators.avg import Avg
-from app.operations.operators.cond import Cond
-from app.operations.operators.function import Function
-from app.operations.operators.gt import Gt
-from app.operations.operators.split import Split
+from pymongo_aggregate.operations.operators.accumulator import Accumulator
+from pymongo_aggregate.operations.operators.avg import Avg
+from pymongo_aggregate.operations.operators.cond import Cond
+from pymongo_aggregate.operations.operators.function import Function
+from pymongo_aggregate.operations.operators.gt import Gt
+from pymongo_aggregate.operations.operators.size import Size
+from pymongo_aggregate.operations.operators.split import Split
 
 
 def test_accumulator(code: str):
@@ -18,6 +19,11 @@ def test_avg():
 
     op = Avg("$quantity")
     assert op["$avg"] == "$quantity"
+
+
+def test_size():
+    op = Size("$quantity")
+    assert op["$size"] == "$quantity"
 
 
 def test_function(code):
