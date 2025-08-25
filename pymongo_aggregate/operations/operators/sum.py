@@ -3,7 +3,7 @@ from pymongo_aggregate.const import COMMON_STAGES
 from pymongo_aggregate.operations.operators.op_operation import OpOperation
 
 
-class Sum(OpOperation[str | list[str] | OpOperation]):
+class Sum(OpOperation[int | str | list[str] | OpOperation]):
 
     """$sum (aggregation)
 

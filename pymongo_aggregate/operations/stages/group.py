@@ -16,7 +16,7 @@ class Group(StageOperation[dict[str, Mapping | None]]):
 
     operator = "$group"
 
-    def __init__(self, content: dict[str, BaseOperation], _id: Mapping | None = None):
+    def __init__(self, content: dict[str, BaseOperation], _id: Mapping | str | None = None):
         for op in content.values():
             if op.operator not in self.available_accumulators():
                 raise ValueError(f"operator '{op.operator}' not available inside '$group'")
